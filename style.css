@@ -1,3 +1,242 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #151515;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dc143c;
+}
+
+header h1 {
+    color: #dc143c;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #dc143c;
+}
+
+main {
+    width: 84%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.inicio {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 0;
+}
+
+.inicio > div {
+    width: 50%;
+}
+
+.inicio p:first-child,
+section > p:first-child {
+    color: #dc143c;
+    font-weight: bold;
+    margin-bottom: 10px; 
+}
+
+.inicio h2 {
+    font-size: 55px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.inicio h2 span {
+    color: #dc143c;
+}
+
+.inicio p:not(:first-child) {
+    color: #bdbdbd;
+    margin-bottom: 25px;
+}
+
+.inicio a,
+.final a {
+    display: inline-block;
+    background-color: #dc143c;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-weight: bold;
+}
+
+.inicio a:hover,
+.final a:hover {
+    background-color: #a50f2d;
+}
+
+.painel {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #dc143c;
+    background-color: #181818;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel h3 {
+    color: #dc143c;
+    font-size: 35px;
+}
+
+.painel p {
+    color: #888;
+}
+
+section {
+    padding: 80px 0;
+    border-top: 1px solid #2b2b2b;
+}
+
+section > h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+section > p:not(:first-child) {
+    color: #aaa;
+    max-width: 700px;
+    margin-bottom: 35px;
+}
+
+.jogos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.jogos article {
+    background-color: #181818;
+    border: 1px solid #333;
+    padding: 25px;
+}
+
+.jogos article:hover {
+    border-color: #dc143c;
+}
+
+.jogos article span {
+    color: #dc143c;
+    font-weight: bold;
+}
+
+.jogos article small {
+    display: block;
+    color: #888;
+    margin-top: 15px;
+}
+
+.jogos h3 {
+    font-size: 27px;
+    margin: 8px 0;
+}
+
+.jogos p {
+    color: #aaa;
+}
+
+.estilo {
+    border-top: 1px solid #333;
+}
+
+.estilo article {
+    display: flex;
+    gap: 25px;
+    padding: 25px 0;
+    border-bottom: 1px solid #333;
+}
+
+.estilo article > span {
+    color: #dc143c;
+    font-weight: bold;
+}
+
+.estilo h3 {
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.estilo p {
+    color: #aaa;
+}
+
+.aprendizados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.aprendizados article {
+    background-color: #181818;
+    border: 1px solid #333;
+    padding: 25px;
+}
+
+.aprendizados span {
+    color: #dc143c;
+    font-weight: bold;
+}
+
+.aprendizados h3 {
+    margin: 15px 0 10px;
+    font-size: 23px;
+}
+
+.aprendizados p {
+    color: #aaa;
+}
+
+.final {
+    text-align: center;
+}
+
+.final h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.final > p:not(:first-child) {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #aaa;
+}
+
+footer {
+    border-top: 1px solid #2b2b2b;
+    padding: 30px 8%;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
 }
